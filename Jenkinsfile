@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build Maven'){
             steps{
-                git url:'https://github.com/lilithathenwa/assessment2CICD/', branch: "master"
+                git url:'https://github.com/lilithathenwa/Assessment2CICD/', branch: "master"
                sh 'mvn clean install'
             }
         }
